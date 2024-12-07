@@ -235,7 +235,7 @@ h5:first-letter {
 }
 
 .bg_img {
-    background-image: url("assets-old/images/header-background.jpg");
+    background-image: url("/images/header-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
