@@ -791,6 +791,9 @@ textarea#message {
     max-width: 40px;
     margin-top: 10px;
 }
+    ul.nav_list {
+    display: none;
+}
 }
 
 @media(max-width:480px) {
