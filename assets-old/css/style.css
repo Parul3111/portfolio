@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
 @font-face {
     font-family: poppins-regular;
@@ -348,12 +349,12 @@ h5:first-letter {
 #portfolio #menu li a {
     display: inline-block;
     padding: 4px 20px;
-    border: 1px solid #333;
+/*  border: 1px solid #333; */
     text-decoration: none;
 }
 
 #portfolio #menu li .active {
-    background: green;
+    background: #a770cb;
     color: #fff;
 }
 
