@@ -516,7 +516,7 @@ h5:first-letter {
 /*contact css*/
 
 #contact {
-    background-image: url("assets-old/images/contact_bg.jpg");
+    background-image: url("/portfolio/assets-old/images/contact_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
