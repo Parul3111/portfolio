@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+@font-face {
+    font-family: poppins-regular;
+    src: url(/assets-old/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-SemiBold;
+    src: url(/assets-old/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(/assets-old/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'poppins-regular';
+    color: #161616;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row {
+    display: flex;
+}
+
+.grid-row {
+    display: flex;
+}
+
+.col-1 {
+    flex: 8.33%;
+}
+
+.col-2 {
+    flex: 16.66%;
+}
+
+.col-3 {
+    flex: 25%;
+}
+
+.col-4 {
+    flex: 33.3%;
+}
+
+.col-5 {
+    flex: 41.66%;
+}
+
+.col-6 {
+    flex: 50%;
+}
+
+.col-7 {
+    flex: 58.33%;
+}
+
+.col-8 {
+    flex: 66.66%;
+}
+
+.col-9 {
+    flex: 75%;
+}
+
+.col-10 {
+    flex: 83.33%;
+}
+
+.col-11 {
+    flex: 91.66%;
+}
+
+.col-12 {
+    flex: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5:first-letter {
+    text-transform: capitalize;
+}
+
+.para-style p,
+.para-style ol {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'poppins-regular';
+    font-weight: 400;
+}
+
+.para-style ol {
+    word-break: break-all;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.end {
+    text-align: end!important;
+}
+
+.algn-slf-cntr {
+    align-self: center !important;
+}
+
+.algn-slf-end {
+    align-self: end !important;
+}
+
+.mt-minus-5 {
+    margin-top: -5%;
+}
+
+.logo_img {
+    width: 100%;
+    max-width: 60px;
+    margin-top: 10px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_list li {
+    list-style-type: none;
+    font-family: 'poppins-regular';
+}
+
+.nav_list li.active {
+    color: #7438a8;
+}
+
+.nav_list li a {
+    font-family: 'poppins-regular';
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: auto;
+}
+
+.dwn-btn {
+    display: inline-block;
+    background: repeating-linear-gradient(359deg, #9D5EC5, #6d31a3 100px);
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: end;
+    padding: 10px 22px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'poppins-SemiBold';
+    font-size: 18px;
+    line-height: 1.5;
+    box-shadow: 0 0 4px #6d31a324;
+}
+
+.dwn-btn:hover {
+    transform: scale(1.1) translateX(0);
+    transition: .4s;
+}
+
+.cntnt h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'poppins-regular';
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+}
+
+.cntnt h1 img {
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
+.cntnt h1 span {
+    display: block;
+    font-size: 58px;
+    line-height: 1.5;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    ;
+}
+
+.cntnt h2 {
+    font-size: 64px;
+    line-height: 1.5;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.cntnt p {
+    font-size: 17px;
+    line-height: 1.8;
+    font-family: 'poppins-regular';
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 27px;
+}
+
+.cntnt p b i {
+    color: yellow;
+    font-weight: 400;
+}
+
+.bg_img {
+    background-image: url("/assets-old/images/header-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 0 8%;
+}
+
+.bg_img::before {
+    content: '';
+    position: absolute;
+    z-index: 100000;
+    left: 0px;
+    top: 22%;
+    background: url("/assets-old/images/finger-right.png");
+    width: 100%;
+    max-width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn2 {
+    background-color: #3838387a;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 1px #ffffff38;
+}
+
+.header_img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.follow {
+    font-size: 18px;
+    padding-left: 8%;
+    margin-bottom: 10px;
+    font-family: 'Edu NSW ACT Foundation';
+}
+
+.social_icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social_icon1 {
+    display: flex;
+}
+
+.social_icon li {
+    list-style-type: none;
+}
+
+.social_icon1 li {
+    list-style-type: none;
+}
+
+.upwork {
+    width: 100%;
+    max-width: 100px;
+    margin-right: 30px;
+}
+
+.upwork:hover {
+    transform: scale(1.1) translatey(-4px);
+    transition: .4s;
+}
+
+.freelancer {
+    width: 100%;
+    max-width: 120px;
+}
+
+.freelancer:hover {
+    transform: scale(1.1) translatey(-4px);
+    transition: .4s;
+}
+
+.social_icon li img {
+    width: 100%;
+    max-width: 60px;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.social_icon li img:hover {
+    transform: scale(1.1) translatey(-4px);
+    transition: .4s;
+}
+
+
+/* projects */
+
+#portfolio {
+    margin: -2% 0 4%;
+}
+
+#portfolio #menu {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#portfolio #menu li {
+    display: inline-block;
+}
+
+#portfolio #menu li a {
+    display: inline-block;
+    padding: 4px 20px;
+    border: 1px solid #333;
+    text-decoration: none;
+}
+
+#portfolio #menu li .active {
+    background: green;
+    color: #fff;
+}
+
+#items {
+    text-align: center;
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#items .single-item {
+    display: inline-block;
+    margin: 20px;
+}
+
+.single-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.single-item img:hover {
+    transform: scale(1.1) translatey(-4px);
+    transition: .4s;
+}
+
+.projects_heading {
+    font-size: 52px;
+    font-family: 'poppins-regular';
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #a770cb;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* skills css*/
+
+#skills {
+    background-image: url("/assets-old/images/skills_bg.jpg");
+    padding: 2% 0 4%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.skill_heading h2 {
+    font-size: 42px;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 29px;
+    color: #fff;
+    font-family: 'poppins-regular';
+    font-style: italic;
+}
+
+.skill_icons_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.skill_icons_list ul li {
+    list-style-type: none;
+}
+
+.skill_icons_list ul li img {
+    width: 100%;
+    max-width: 140px;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+}
+
+.skill_icons_list {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+/*experienceand educations*/
+
+.exedu h5 {
+    font-size: 36px;
+    font-family: 'poppins-regular';
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #a770cb;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.box1 {
+    background-color: #fff;
+    border: 1px solid #0000003b;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 1px #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cntnt_bx1 h3 {
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'poppins-SemiBold';
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cntnt_bx2 h3 {
+    text-align: right;
+    background-color: #a36cc98f;
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border: 1px solid #a56ecb3b;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0 0 2px #a770cb;
+    font-family: 'poppins-regular';
+    font-size: 16px;
+}
+
+.cntnt_bx1 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 2px;
+    font-family: 'poppins-regular';
+}
+
+.company {
+    width: 100%;
+    max-width: 17px;
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+.location {
+    width: 100%;
+    max-width: 12px;
+    margin-left: 12px;
+    margin-right: 2px;
+}
+
+.calenderr {
+    width: 100%;
+    max-width: 14px;
+    margin-right: 6px;
+}
+
+
+/*contact css*/
+
+#contact {
+    background-image: url(/assets-old/images/contact_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+}
+
+.form-cntct {
+    background-color: #2826268c;
+    border-radius: 10px;
+    box-shadow: 0 0 0px #FFA;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-family: poppins-medium;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #89898938;
+    padding: 6px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 0 1px #fff;
+    background-color: #ffffffe3;
+}
+
+textarea#message {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 0 1px #fff;
+    background-color: #ffffffe3;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #9D5EC5, #6D31A3);
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'poppins-SemiBold';
+    line-height: 1.5;
+    margin-top: 23px;
+    border: 1px solid #a46dca;
+    cursor: pointer;
+}
+
+.get_in {
+    font-size: 34px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'poppins-regular';
+    font-weight: 400;
+    text-shadow: 0 0 #000;
+}
+
+#contact p {
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+/*footer css*/
+
+#footer {
+    background: linear-gradient(45deg, #9D5EC5, #6D31A3);
+    padding: 10px 0;
+    text-align: center;
+}
+
+#footer p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+
+.dktp-only {
+    display: block;
+}
+
+.mbl-only {
+    display: none;
+}
+
+
+/* media-query start */
+
+@media(max-width: 1440px) {
+    #footer p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .container {
+        padding: 0px 20px;
+    }
+    .cntnt h2 {
+        font-size: 52px;
+    }
+    .cntnt {
+        padding-left: 13%;
+    }
+    .dwn-btn {
+        padding: 10px 17px;
+        font-size: 15px;
+    }
+    .cntnt h1 span {
+        font-size: 52px;
+    }
+    .cntnt p {
+        font-size: 14px;
+        line-height: 2;
+    }
+}
+
+@media(max-width: 991px) {
+    .cntnt h2 {
+        font-size: 51px;
+    }
+}
+
+@media(max-width: 853px) {
+    .dwn-btn {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+    .header_img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .cntnt h2 {
+        font-size: 44px;
+    }
+    .cntnt h1 span {
+        font-size: 44px;
+    }
+}
+
+@media(max-width: 820px) {}
+
+@media(max-width: 768px) {
+    .row {
+        display: block;
+    }
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        flex: 100%;
+    }
+    .dktp-only {
+        display: none;
+    }
+    .mbl-only {
+        display: block;
+    }
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .dwn-btn {
+        display: none;
+    }
+    .nav_list {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .bg_img::before {
+        top: 35%;
+    }
+    .cntnt {
+        padding-left: 0%;
+        text-align: center;
+    }
+    .cntnt h2 {
+        font-size: 58px;
+    }
+    .cntnt h1 span {
+        font-size: 54px;
+    }
+    .cntnt p {
+        width: 100%;
+        max-width: 449px;
+        margin: 0 auto;
+    }
+    .bg_img {
+        padding: 4% 0 4%;
+    }
+    #portfolio #menu li a {
+        padding: 6px 15px;
+        border: 1px solid #33333305;
+        margin-bottom: 15px;
+        box-shadow: 0 0 2px #0000000f;
+    }
+    .skill_icons_list {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:500px) {
+    .cntnt h1 span {
+        font-size: 48px;
+    }
+    .cntnt h2 {
+        font-size: 53px;
+    }
+    .icons_logo {
+        display: none;
+    }
+    #portfolio #menu li {
+        display: inline-block;
+        margin: 0 13px;
+    }
+    #items {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+    .single-item img {
+        max-width: 360px;
+    }
+    .cntnt_bx1 p {
+        margin-bottom: 13px;
+    }
+    .location {
+        max-width: 17px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    .form-cntct {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    .cntnt h2 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 460px) {}
+
+@media(max-width: 430px) {
+    .cntnt h2 {
+        font-size: 46px;
+    }
+    .cntnt h1 span {
+        font-size: 44px;
+    }
+    .cntnt p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+    .bg_img::before {
+        top: 32%;
+        max-width: 43px;
+        height: 43px;
+    }
+}
+
+@media(max-width: 428px) {}
+
+@media(max-width: 424px) {}
+
+@media(max-width: 414px) {}
+
+@media(max-width: 412px) {}
+
+@media(max-width: 400px) {
+    .cntnt h2 {
+        font-size: 43px;
+    }
+}
+
+@media(max-width: 390px) {
+    .exedu h5 {
+        font-size: 29px;
+        margin-top: 30px;
+    }
+    .cntnt_bx1 h3 {
+        line-height: 1.5;
+        margin-bottom: 21px;
+    }
+}
+
+@media(max-width: 380px) {
+    .cntnt h1 span {
+        font-size: 38px;
+    }
+    .cntnt h2 {
+        font-size: 41px;
+    }
+}
+
+@media(max-width: 360px) {
+    .cntnt h2 {
+        font-size: 39px;
+    }
+    .cntnt h1 span {
+        font-size: 37px;
+    }
+    .cntnt_bx1 h3 {
+        font-size: 16px;
+    }
+    .cntnt_bx1 p {
+        font-size: 15px;
+    }
+    .exedu h5 {
+        font-size: 27px;
+    }
+    .projects_heading {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+    .skill_heading h2 {
+        font-size: 37px;
+    }
+}
+
+@media(max-width: 350px) {
+    .cntnt h2 {
+        font-size: 38px;
+    }
+}
+
+@media(max-width:330px) {
+    .cntnt h1 span {
+        font-size: 33px;
+    }
+    .cntnt h2 {
+        font-size: 36px;
+    }
+}
+
+@media(max-width:320px) {
+    .cntnt h2 {
+        font-size: 34px;
+    }
+    .cntnt h1 span {
+        font-size: 32px;
+    }
+}
