@@ -235,7 +235,7 @@ h5:first-letter {
 }
 
 .bg_img {
-    background-image: url("/assets-old/images/header-background.jpg");
+    background-image: url("assets-old/images/header-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,7 +248,7 @@ h5:first-letter {
     z-index: 100000;
     left: 0px;
     top: 22%;
-    background: url("/assets-old/images/finger-right.png");
+    background: url("assets-old/images/finger-right.png");
     width: 100%;
     max-width: 70px;
     height: 70px;
@@ -395,7 +395,7 @@ h5:first-letter {
 /* skills css*/
 
 #skills {
-    background-image: url("/assets-old/images/skills_bg.jpg");
+    background-image: url("assets-old/images/skills_bg.jpg");
     padding: 2% 0 4%;
     background-position: center;
     background-size: cover;
@@ -516,7 +516,7 @@ h5:first-letter {
 /*contact css*/
 
 #contact {
-    background-image: url(/assets-old/images/contact_bg.jpg);
+    background-image: url("assets-old/images/contact_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
