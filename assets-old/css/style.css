@@ -709,7 +709,8 @@ textarea#message {
         margin-top: 10px;
     }
     .dwn-btn {
-        display: none;
+        float: right;
+        margin-top: 2%;
     }
     .nav_list {
         margin-bottom: 20px;
