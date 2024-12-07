@@ -781,6 +781,16 @@ textarea#message {
     .form-cntct {
         max-width: 100%;
     }
+    .logo {
+        text-align: left;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+    .logo_img {
+    width: 100%;
+    max-width: 40px;
+    margin-top: 10px;
+}
 }
 
 @media(max-width:480px) {
