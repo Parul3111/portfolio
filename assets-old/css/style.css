@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: poppins-SemiBold;
-    src: url(/assets-old/fonts/Poppins/Poppins-SemiBold.ttf);
+    src: url(/portfolio/assets-old/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
 @font-face {
     font-family: poppins-medium;
-    src: url(/assets-old/fonts/Poppins/Poppins-Medium.ttf);
+    src: url(/portfolio/assets-old/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 * {
@@ -235,7 +235,7 @@ h5:first-letter {
 }
 
 .bg_img {
-    background-image: url("./images/header-background.jpg");
+    background-image: url("/portfolio/assets-old/images/header-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,7 +248,7 @@ h5:first-letter {
     z-index: 100000;
     left: 0px;
     top: 22%;
-    background: url("assets-old/images/finger-right.png");
+    background: url("/portfolio/assets-old/images/finger-right.png");
     width: 100%;
     max-width: 70px;
     height: 70px;
@@ -395,7 +395,7 @@ h5:first-letter {
 /* skills css*/
 
 #skills {
-    background-image: url("assets-old/images/skills_bg.jpg");
+    background-image: url("/portfolio/assets-old/images/skills_bg.jpg");
     padding: 2% 0 4%;
     background-position: center;
     background-size: cover;
