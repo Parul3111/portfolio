@@ -23,27 +23,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets-old/css/style.css?v=1">
-<?php
-        if(!empty($_POST["send"])){
-            $userName = $_POST["userName"];
-            $userEmail = $_POST["userEmail"];
-            $userPhone = $_POST["userPhone"];
-            $userMessage = $_POST["userMessage"];
-            $toEmail = $_POST["theparulsehgal@gmail.con"];
-
-            $mailHeaders = "Name: " . $userName .
-            "\r\n Email: " . $userEmail . 
-            "\r\n Phone: " . $userPhone .
-            "\r\n Message: " . $userMessage . "\r\n";
-
-            if(mail($toEmail, $userName, $mailHeaders)){
-                $message = "Your Information is Recevied Successflly.";
-            }
-        }
-
-    ?>
 </head>
-
 <body>
 
     <nav>
@@ -75,7 +55,6 @@
             <div class="row">
                 <div class="col-6 algn-slf-cntr">
                     <div class="cntnt">
-
                         <h1>Hi, I'm <span>Parul Sehgal</span></h1>
                         <h2>A Front-End Developer</h2>
                         <p>I specialize in building responsive, <b><i>user-friendly websites</i></b> and web applications that help businesses grow and succeed.</p>
@@ -106,22 +85,21 @@
                                 <h6 class="follow">Follow Now @theparulsehgal</h6>
                                 <ul class="social_icon">
                                     <li>
-                                        <a href="https://www.linkedin.com/in/theparulsehgal/" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/LinkedIn.webp" /> </a>
+                                        <a href="https://www.linkedin.com/in/theparulsehgal/" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/LinkedIn.webp" /></a>
                                     </li>
 
                                     <li>
-                                        <a href="https://www.facebook.com/theparulsehgal/" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/Facebook.webp" /> </a>
+                                        <a href="https://www.facebook.com/theparulsehgal/" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/Facebook.webp" /></a>
                                     </li>
 
                                     <li>
-                                        <a href="https://www.instagram.com/theparulsehgal/" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/Instagram.webp" /> </a>
+                                        <a href="https://www.instagram.com/theparulsehgal/" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/Instagram.webp" /></a>
                                     </li>
 
                                     <li>
-                                        <a href="https://wa.link/jnznyr" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/whatsapp.png" /> </a>
+                                        <a href="https://wa.link/jnznyr" target="_blank" rel="noopener noreferrer"><img src="assets-old/images/whatsapp.png" /></a>
                                     </li>
                                 </ul>
-
                             </div>
                             <div class="cntnt_bx2 algn-slf-cntr">
                                 <h6 class="follow center">Hire Me $10/hr </h6>
@@ -316,7 +294,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer id="footer">
@@ -328,37 +305,7 @@
             </div>
         </div>
     </footer>
-
- 
-    <div class="container">
-        <form method="post" name="emailContact">
-            <div class="input-row">
-                <label>Name <em>*</em></label>
-                <input type="text" id="name" placeholder="name" name="userName" required>
-            </div>
-            <div class="input-row">
-                <label>E-mail <em>*</em></label>
-                <input type="text" id="Email" placeholder="Email" name="userEmail" required>
-            </div>
-            <div class="input-row">
-                <label>Phone <em>*</em></label>
-                <input type="tel" id="Phone" placeholder="Phone" name="userPhone" required>
-            </div>
-            <div class="input-row">
-                <label>Message <em>*</em></label>
-                <textarea name="userMessage" id="" required></textarea>
-            </div>
-            <div class="input-row">
-                <input type="submit" name="send" value="Submit">
-
-                <?php if(!empty($message)){ ?>
-                <div class="success">
-                    <strong><?php echo $message; ?></strong>
-                </div>
-                <?php } ?>
-            </div>
-        </form>
-    </div>
+    
     <script src="assets-old/js/jquery-3.7.1.min.js"></script>
     <script>
         // use jquery cdn
