@@ -23,7 +23,25 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets-old/css/style.css?v=1">
+<?php
+        if(!empty($_POST["send"])){
+            $userName = $_POST["userName"];
+            $userEmail = $_POST["userEmail"];
+            $userPhone = $_POST["userPhone"];
+            $userMessage = $_POST["userMessage"];
+            $toEmail = $_POST["theparulsehgal@gmail.con"];
 
+            $mailHeaders = "Name: " . $userName .
+            "\r\n Email: " . $userEmail . 
+            "\r\n Phone: " . $userPhone .
+            "\r\n Message: " . $userMessage . "\r\n";
+
+            if(mail($toEmail, $userName, $mailHeaders)){
+                $message = "Your Information is Recevied Successflly.";
+            }
+        }
+
+    ?>
 </head>
 
 <body>
@@ -311,7 +329,37 @@
         </div>
     </footer>
 
-
+ 
+    <div class="container">
+        <form method="post" name="emailContact">
+            <div class="input-row">
+                <label>Name <em>*</em></label>
+                <input type="text" id="name" placeholder="name" name="userName" required>
+            </div>
+            <div class="input-row">
+                <label>E-mail <em>*</em></label>
+                <input type="text" id="Email" placeholder="Email" name="userEmail" required>
+            </div>
+            <div class="input-row">
+                <label>Phone <em>*</em></label>
+                <input type="tel" id="Phone" placeholder="Phone" name="userPhone" required>
+            </div>
+            <div class="input-row">
+                <label>Message <em>*</em></label>
+                <textarea name="userMessage" id="" required></textarea>
+            </div>
+            <div class="input-row">
+                <input type="submit" name="send" value="Submit">
+                <div class="success">
+                    <strong>Success</strong>
+                </div>
+            </div>
+            <!--<input type="text" id="name" placeholder="name" name="name" required>
+            <input type="text" id="phone" placeholder="phone" name="phone" required>
+            <input type="text" id="email" placeholder="email" name="email" required>
+            <button type="submit" class="btn">submit</button>-->
+        </form>
+    </div>
     <script src="assets-old/js/jquery-3.7.1.min.js"></script>
     <script>
         // use jquery cdn
